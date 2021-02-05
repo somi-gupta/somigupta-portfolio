@@ -1,0 +1,150 @@
+* {
+  /* This property allows us to include the padding and border in an element's total width and height. */
+  box-sizing: border-box;
+  /* This property is used to generate space around an element's content, inside of any defined borders. */
+  padding: 0;
+  /* This property is used to create space around element, outside of any borders */
+  margin: 0;
+  font-family: sans-serif;
+}
+ 
+body {
+    /* sets the background color of the page */
+    background-color: #d9dcd6;
+  }
+
+.header{
+  padding: 20px;
+  /* This property specifies the font for an element */
+  background-color: #2a607c;
+  /* This property specifies the color of text. */
+  color: #ffffff;
+}
+.header h1{
+    /* display: inline-block allows to set a width and height on the element respecting top and bottom margins/paddings. */
+    display: inline-block;
+    /* This property property sets the size of a font */
+    font-size: 48px;
+}
+
+.header nav {
+  padding-top: 15px;
+  /* This property sets the right margin of an element */
+  margin-right: 20px;
+  /* This property defines how an element should float */
+  float: right;
+  font-size: 20px;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  /* This property sets the left margin of an element */
+  margin-left: 25px;
+} 
+
+a {
+  color: #ffffff;
+  /* This property specifies the decoration added to text */
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  clear: both;
+  float: right;
+  
+}
+
+ .aside{
+  margin-right: 20px;
+  padding: 20px;
+  /* This property specifies on which sides of an element floating elements are not allowed to float. */
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+ } 
+ .alignright {
+  float: right;
+  /* text-align: justify;
+  text-justify: inter-word; */
+}
+section h2{
+    clear: both;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    font-size: 40px;
+    color: darkcyan;
+    
+}
+.hero1{
+    /* This property sets the height of an element. */
+    height: 100px;
+    /* This property sets the width of an element. */
+    width: 100%;
+    /* This property sets the bottom margin of an element */
+    margin-bottom: 25px;
+    /* This property set the background image */
+    background-image: url("../images/background.jpg");
+    /* This property specifies the size of the background images. */
+    /* background-size: cover; */
+    /* This property specifies the position of the background images. */
+    background-position: center;
+    margin: 0%;
+}
+.vl {
+    display: flex;
+    border-left: 3px solid darkcyan;
+    /* height: calc(100% - 20px); */
+    position: absolute;
+    left: 15%; 
+    padding-left: 4%;
+  }
+
+.container {
+    /* border-style: solid; */
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    width: 25%;
+}
+
+.container img {
+  width: 100%;
+  }
+
+  .contact{
+      display: flex;
+  }
+
+  .contact li{
+    padding: 2rem;  
+    margin: 0 1rem;
+  }
+  /* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    .container {
+      width: 50%;
+    }
+    /* Change the header color */
+    /* header {
+      background: #772014;
+    } */
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    /* Change the header color
+    header {
+      background: #8ac4ff;
+    } */
+  }
