@@ -49,7 +49,7 @@ header nav ul li{
 a {
   color: #ffffff;
   /* This property specifies the decoration added to text */
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .sideheader{
@@ -59,22 +59,13 @@ a {
   padding: 1rem;
   width: 20%;
   display: inline;
+  clear: both;
+  float: left;
+  margin-top: 1rem;
 }
 
 .alignright{
   float: left;
-}
-
-section h2{
-    clear: both;
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    font-size: 40px;
-    color: darkcyan;
-    border-right-style: solid
-    
 }
 .hero1{
     /* This property sets the height of an element. */
@@ -96,27 +87,47 @@ section h2{
     border-width: 1px;
     padding: 10px;
     float: left;
-    width: 15%;
+    width: 80%;
+}
+
+.imgDiv{
+  width: 100px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  background-color: none;
+}
+
+.imgDiv img{
+  background-color: red;
+  width: 100%;
+  height: 100%;
 }
 .containerp{
   float: left;
   padding-left: 1rem;
   width: 75%;
+  margin-top: 1rem;
 }
-/* .container img {
+/* .container img{
   width: 100%;
+  height: auto;
+  float: left;
+  display: block;
   } */
 
   .contact{
+    /* border-style: solid; */
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:white;  
+    width: 80%;
+ 
 }
 
   .contact li{
-    float: left;
+  display:inline-block;
   }
 
   .contact li a{
@@ -129,10 +140,6 @@ section h2{
 
   li a:hover {
     background-color: lightgray;
-  }
-
-  section h2 ul{
-    list-style-type: none;
   }
   
   header nav ul li{
