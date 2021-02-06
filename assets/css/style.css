@@ -52,27 +52,19 @@ a {
   text-decoration: none;
 }
 
-p {
-  font-size: 16px;
-  clear: both;
-  float: right;
-  
+.sideheader{
+  font-size: 40px;
+  color: darkcyan;
+  border-right-style: solid;
+  padding: 1rem;
+  width: 20%;
+  display: inline;
 }
 
- .aside{
-  margin-right: 20px;
-  padding: 20px;
-  /* This property specifies on which sides of an element floating elements are not allowed to float. */
-  clear: both;
-  float: right;
-  width: 20%;
-  height: 100%;
- } 
- .alignright {
-  float: right;
-  /* text-align: justify;
-  text-justify: inter-word; */
+.alignright{
+  float: left;
 }
+
 section h2{
     clear: both;
     float: left;
@@ -81,6 +73,7 @@ section h2{
     padding: 1rem;
     font-size: 40px;
     color: darkcyan;
+    border-right-style: solid
     
 }
 .hero1{
@@ -98,44 +91,60 @@ section h2{
     background-position: center;
     margin: 0%;
 }
-.vl {
-    display: flex;
-    border-left: 3px solid darkcyan;
-    /* height: calc(100% - 20px); */
-    position: absolute;
-    left: 15%; 
-    padding-left: 4%;
-  }
 
 .container {
-    /* border-style: solid; */
     border-width: 1px;
     padding: 10px;
     float: left;
-    width: 25%;
+    width: 15%;
 }
-
-.container img {
+.containerp{
+  float: left;
+  padding-left: 1rem;
+  width: 75%;
+}
+/* .container img {
   width: 100%;
-  }
+  } */
 
   .contact{
-      display: flex;
-  }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;  
+}
 
   .contact li{
-    padding: 2rem;  
-    margin: 0 1rem;
+    float: left;
+  }
+
+  .contact li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: lightgray;
+  }
+
+  section h2 ul{
+    list-style-type: none;
+  }
+  
+  header nav ul li{
+    display: inline-block;
+    /* This property sets the left margin of an element */
+    margin-left: 25px;
   }
   /* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
     .container {
       width: 50%;
     }
-    /* Change the header color */
-    /* header {
-      background: #772014;
-    } */
   }
   
   /* Cards are stacked on top of each other at 768px or smaller */
@@ -143,8 +152,4 @@ section h2{
     .container {
       width: 100%;
     }
-    /* Change the header color
-    header {
-      background: #8ac4ff;
-    } */
   }
