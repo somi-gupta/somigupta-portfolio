@@ -1,3 +1,7 @@
+:root {
+  --heading: powderblue;
+}
+
 * {
   /* This property allows us to include the padding and border in an element's total width and height. */
   box-sizing: border-box;
@@ -5,26 +9,28 @@
   padding: 0;
   /* This property is used to create space around element, outside of any borders */
   margin: 0;
+  /* This property property sets the type of a font */
   font-family: sans-serif;
 }
- 
-body {
-    /* sets the background color of the page */
-    background-color: #d9dcd6;
-  }
 
-.header{
+body {
+  /* sets the background color of the page */
+  background-color: lightslategrey;
+}
+
+.header {
   padding: 20px;
   /* This property specifies the font for an element */
-  background-color: #2a607c;
+  background-color: gray;
   /* This property specifies the color of text. */
-  color: #ffffff;
+  color: var(--heading);
 }
-.header h1{
-    /* display: inline-block allows to set a width and height on the element respecting top and bottom margins/paddings. */
-    display: inline-block;
-    /* This property property sets the size of a font */
-    font-size: 48px;
+
+.header h1 {
+  /* display: inline-block allows to set a width and height on the element respecting top and bottom margins/paddings. */
+  display: inline-block;
+  /* This property property sets the size of a font */
+  font-size: 48px;
 }
 
 .header nav {
@@ -36,83 +42,109 @@ body {
   font-size: 20px;
 }
 
-header nav ul{
+header nav ul {
+  /* This property sets list style to none */
   list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
+  /* This property sets the display as inline in a block */
   display: inline-block;
   /* This property sets the left margin of an element */
   margin-left: 25px;
-} 
-
-a {
-  color: #ffffff;
 }
 
-.sideheader{
+a {
+  /* This property sets the position of an element */
+  position: relative;
+  color: var(--heading);
+}
+
+.sideheader {
   font-size: 40px;
-  color: darkcyan;
+  color: var(--heading);
+  /* This property sets the border style */
   border-right-style: solid;
+  border-right-width: thick;
+  /* This property sets the padding to an element*/
   padding: 1rem;
+  /* This property sets the width of an element*/
   width: 20%;
-  display: inline;
+  /* This property not allow floating elements on the left or the right side of a specified element */
   clear: both;
+  /* This property places an element to its left of the container */
   float: left;
+  /* This propperty sets the top marging of an element */
   margin-top: 1rem;
 }
 
-.alignright{
+.alignright {
   float: left;
 }
-.hero1{
-    /* This property sets the height of an element. */
-    height: 60vh;
-    /* This property sets the width of an element. */
-    width: 100%;
-    /* This property sets the bottom margin of an element */
-    margin-bottom: 25px;
-    /* This property set the background image */
-    background-image: linear-gradient(lightblue, lightgray);
-    /* background-repeat: ; */
-    /* background-image: url("../images/background.jpg"); */
-    /* This property specifies the size of the background images. */
-    background-size: cover;
-    /* This property specifies the position of the background images. */
-    background-position: center;
-    margin: 0%;
+
+.hero {
+  /* This property sets the height of an element. */
+  height: 40vh;
+  /* This property sets the width of an element. */
+  width: 100%;
+  /* This property sets the bottom margin of an element */
+  margin-bottom: 25px;
+  /* This property sets the background as color gradient */
+  background: linear-gradient(lightblue, white);
+  /* This property specifies the size of the background images. */
+  background-size: cover;
+  margin: 0%;
+}
+
+#avatar {
+  /* This property sets the border radius */
+  border-radius: 1px;
+}
+
+.imgResponsive {
+  width: 15%;
+  /* max-width: 200px; */
+  height: auto;
+  position: relative;
 }
 
 /* Bottom right text */
+
 .bottom-right {
   display: inline-block;
+  /* This property sets the position relative to nearest native ancestor*/
   position: absolute;
+  /* This property sets the horizontal position of the  positioned element */
   right: 16px;
-  top:60%;
+  /* This property sets the vertical position of the  positioned element */
+  top: 40%;
+  /* This property sets the coordinates space of the element */
   transform: translate(-50%, -50%);
   font-size: 1.8rem;
-  font-weight:bold;
-  color: white;
-  
+  /* This property defines the font weight */
+  font-weight: bold;
+  color: grey;
 }
 
 /* Container 80%, Sidebar 20% */
 .container {
   border-width: 1px;
-  padding: 10px;
+  padding: 8px;
   float: left;
   width: 80%;
 }
+
 /* Set the image container to flex and wrap childs */
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 /* Image spacing between each other per row */
 .col {
- flex-basis: 30%;
- margin: 20px 20px;
+  flex-basis: 20%;
+  margin: 10px 10px;
 }
 
 /* Same image sizes */
@@ -121,61 +153,73 @@ a {
   width: 300px;
   border: 1px solid #ccc;
 }
+
+/* Hover over an image to zoom */
 .imgDiv:hover {
-  transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* (200% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5);
+  /* This property specifies the stack order of an element. */
+  z-index: 2;
 }
-.containerp{
+
+/* <p> element size */
+.container p {
   float: left;
   padding-left: 1rem;
   width: 75%;
   margin-top: 1rem;
 }
 
-.text-box{
-  /* padding: 15px;
-  text-align: center; */
+/* Set the text on an image */
+.text-box {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: burlywood;
 }
 
-  .contact{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 80%;
- 
+/* Set the contact-me list style */
+.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 80%;
 }
 
-  .contact li{
-  display:inline-block;
+/* Set the list as inline */
+.contact li {
+  display: inline-block;
   padding: 16px;
+}
 
-  }
-
-  .contact li a{
+/* Set the <a> tag color, text-align and display */
+.contact li a {
   display: block;
   color: black;
   text-align: center;
-  }
+}
 
-  li a:hover {
-    background-color: gray;
-  }
-  
-  header nav ul li{
-    display: inline-block;
-    /* This property sets the left margin of an element */
-    margin-left: 25px;
-  }
-  /* Cards are split into two columns at 992px or smaller */
+li a:hover {
+  background-color: gray;
+}
+
+header nav ul li {
+  display: inline-block;
+  /* This property sets the left margin of an element */
+  margin-left: 25px;
+}
+
+/* Width is set to 50% at 992px or smaller */
 @media screen and (max-width: 992px) {
-    .container {
-      width: 50%;
-    }
+  .container{
+    width: 50%;
   }
-  
-  /* Cards are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 100%;
-    }
+}
+
+/* Width is set to 100%  at 768px or smaller */
+@media screen and (max-width: 768px) {
+  .container{
+    width: 100%;
   }
+}
