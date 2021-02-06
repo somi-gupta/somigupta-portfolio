@@ -16,7 +16,7 @@ Code language used is HTML and CSS.
 # Tests
 
 # Deployed application link
-Please navigatr to the application via: https://somi-gupta.github.io/somigupta-portfolio/ 
+Please navigate to the application via: https://somi-gupta.github.io/somigupta-portfolio/ 
 
 # Screenshot of the deployed application
 ![Portfolio](./assets/images/Application-screenshot.jpg?raw=true)
