@@ -1,0 +1,72 @@
+/* xs */
+img {
+    width: 100px;
+    height: auto;
+  }
+  /* sm */
+  @media (min-width: 768px) {
+    img {
+        width: 150px;
+    }
+  }
+  /* md */
+  @media (min-width: 992px) {
+    img {
+        width: 200px;
+    }
+  }
+  /* lg */
+  @media (min-width: 1200px) {
+    img {
+        width: 250px;
+    }
+  }
+  
+  .img-card{
+    height: 300px;
+  }
+   .card-deck{
+    width: 80rem;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+     
+  }
+  .card-img-top {
+    max-height: 200px;
+    min-height: 150px;
+    object-fit: cover;
+}
+
+  .navbar{
+    background-color: #e9ecef;
+  }
+
+  a {
+    color:gray;
+    font-style: italic;
+    
+  }
+  nav{
+    margin-bottom: 2em;
+  }
+
+  .navbar-toggler{
+    background-color:gray;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .custom{
+    background-color: lightgray;
+    margin-right: 1rem;
+  }
+
+  :target {
+    /* background: yellow; */
+    border:0.2rem;
+    border-color: lightcoral;
+    border-style: solid;
+ }
